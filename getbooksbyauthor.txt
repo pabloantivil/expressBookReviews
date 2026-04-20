@@ -1,0 +1,49 @@
+curl http://localhost:5000/isbn/1
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {"author":"Chinua Achebe","title":"Things Fall 
+                    Apart","reviews":{}}
+RawContent        : HTTP/1.1 200 OK
+                    Connection: keep-alive
+                    Keep-Alive: timeout=5
+                    Content-Length: 67
+                    Content-Type: application/json; charset=utf-8
+                    Date: Mon, 20 Apr 2026 20:27:34 GMT
+                    ETag: W/"43-ATO5jS73w2LhKRroBoee...
+Forms             : {}                                                
+Headers           : {[Connection, keep-alive], [Keep-Alive,           
+                    timeout=5], [Content-Length, 67], [Content-Type,  
+                    application/json; charset=utf-8]...}              
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 67
+
+
+
+PS C:\Users\pablo\OneDrive\Documentos\UCT\Personal\Coursera\NodeJS and Express> curl "http://localhost:5000/author/Jane%20Austen"
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {"8":{"author":"Jane Austen","title":"Pride and 
+                    Prejudice","reviews":{}}}
+RawContent        : HTTP/1.1 200 OK
+                    Connection: keep-alive
+                    Keep-Alive: timeout=5
+                    Content-Length: 73
+                    Content-Type: application/json; charset=utf-8
+                    Date: Mon, 20 Apr 2026 20:28:35 GMT
+                    ETag: W/"49-VSKkDPoL6304TIGraTT9...
+Forms             : {}
+Headers           : {[Connection, keep-alive], [Keep-Alive, 
+                    timeout=5], [Content-Length, 73], [Content-Type, 
+                    application/json; charset=utf-8]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 73
